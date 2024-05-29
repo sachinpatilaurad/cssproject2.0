@@ -1,0 +1,595 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+@font-face {
+    font-family: myFont;
+    src: url(Evogria.otf);
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding-top: 0.1px;
+}
+#nav{
+    height: 12vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#nav h2{
+    /* background-color: rgb(222, 219, 21); */
+    height: 100%;
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+#nav h2:nth-last-child(2){
+    width: 29%;
+    /* background-color: red; */
+
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+    /* background-color: red; */
+
+}
+#nav h1{
+    /* background-color: rgb(222, 219, 21); */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+    letter-spacing: -5px;
+}
+#center{
+    height: 80%;
+    width: 100%;
+    /* background-color: black; */
+    padding: 4vw;
+    position: relative;
+}
+#content{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    position: relative;
+}
+#content video{
+       height: 100%;
+      width: 100%;
+      object-fit: cover;
+}
+#overlay{
+    height: 52%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    padding: 3vw;
+    /* display: flex; */
+}
+#overlay1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+#overlay1 h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.6vw;
+    /* font-weight: 500; */
+    letter-spacing: -3px;
+    font-weight: bolder;
+}
+#overlay1 h2{
+    font-size: 1vw;
+    padding: 2.1vw  2.2vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 1px solid #fff;
+    border-bottom: 4px solid #fff;
+}
+#overlay2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-top: 2px solid white;
+   padding: 0.5vw 0;
+}
+#overlay2 h4{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+#overlay2 img{
+    height: 3vw;
+}
+#scroll{
+height: 40vh;
+width: 100%;
+/* background-color: red; */
+padding: 2px;
+white-space: nowrap;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#container img{
+    /* display: none; */
+    height: 70%;
+    width: 15%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 30% 30%;
+}
+@keyframes anime{
+    from{
+        transform: translatex(0%);
+    }
+    to{
+         transform: translate(-100%);
+    }
+}
+#alphabet{
+    height: 12vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+#alphabet h5{
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+   border-bottom: 3px solid black;
+   letter-spacing: 2px;
+   margin: 2vw;
+
+}
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+   border: 1px solid rgba(0, 0, 0, 0);
+   letter-spacing: 2px;
+   /* background-color: yellow; */
+   padding: 0.5vw 0.7vw;
+   border-radius: 50%;
+   cursor: pointer;
+   translate: all ease 0.2s;
+
+}
+#alphabet h6:hover{
+    border: 1px solid black;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+#page2-part1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1582865808609-5e6e80e53573?q=80&w=3095&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+}
+#page2-part2{
+    height: 100%;
+    width: 46%;
+    
+}
+#page2-part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+#page2-part2-bottom{
+    display: flex;
+    height: 30%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 10px;
+    margin-top: 10px;
+}
+#page2-part2-bottom-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: blue; */
+}
+#page2-part2-bottom-right h3{
+    font-weight: 600;
+    font-size: 30px;
+
+}
+#page2-part2-bottom-left{
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(229, 255, 0); */
+}
+#page2-part2-bottom-left p{
+    font-weight: 600;
+    font-size: 17px;
+}
+#page2-bottom{
+    height: 5vw;
+    width: 100%;
+    /* background-color: wheat; */
+    padding-left: 70px;
+    letter-spacing: -2px;
+    margin-top: -10px;
+}
+#page2-bottom h1{
+    font-weight: bolder;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 20px 65px;
+    align-items: center;
+    justify-content: space-between;
+}
+#page3-part1{
+    height: 100%;
+    width: 40%;
+    background-image: url(circular\ img.jpg);
+    background-position: center; 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#page3-part1 img{
+padding: 61% 40%;
+}
+#page3-part2 img{
+height: 100%;
+width: 100%;
+  object-fit: cover;
+  object-position : 0 80%;
+}
+#page3-part2{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(225, 255, 0);
+    object-fit: contain;
+}
+#page4{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    padding: 60px;
+}
+#page4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page5{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding: 5vw 4vw;
+
+}
+#page5>h1{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    letter-spacing: -3px;
+    margin-bottom: 9vh;
+}
+.elem{
+    height: 16vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   padding: 0 2vw;
+   position: relative;
+   transition: all ease 0.3s;
+}
+.elem img{
+     height: 100px;
+     width: 100px;
+     position: absolute;
+     border-radius: 50%;
+     left: 12%;
+     object-fit: cover;
+     object-position: top;
+     opacity: 0;
+     transition: all ease 0.2s;
+
+}
+
+.elem h4{
+    font-size: 1.2vw ;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 6%;
+    /* background-color: red; */
+}
+
+.elem #elem-part2{
+    width: 50%;
+}
+.elem #elem-part2 h1{
+    font-size: 3vw;
+    font-weight: 500 ;
+}
+.elem #elem-part2 h5{
+    font-size: 1vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+.elem:nth-last-child(3) img{
+    left: 50%;
+}
+.elem:nth-last-child(1) img{
+    left: 50%;
+}
+.elem:hover{
+      background-color: #f1efef;
+}
+.elem:hover img{
+        opacity: 1;
+        left: 24%;
+}
+#page6{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    padding: 53px;
+    position: relative;
+}
+#page6-part1{
+    height: 100%;
+    width: 50%;
+    /* background-color: blue; */
+}
+#page6-part1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page6-part2{
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(153, 255, 0); */
+    padding-left: 20px;
+}
+#page6-part2-top{
+    height: 50%;
+    width: 100%;
+    /* background-color: green; */
+}
+#page6-part2-top1{
+    height: 20%;
+    width:100%;
+    /* background-color: orange; */
+    padding-top: 10px;
+
+}
+#page6-part2-top1 h1{
+    font-size: 36px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    letter-spacing: -3px;
+    padding: 2px;
+
+}
+#page6-part2-top2{
+    height: 40%;
+    width: 100%;
+    /* background-color: brown; */
+}
+#page6-part2-top2 p{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 20px;
+    font-weight: 500;
+}
+#page6-part2-top3 {
+    height: 40%;
+    width: 100%;
+    padding-top: 20px;
+    /* background-color: red; */
+}
+#page6-part2-top3 p{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+#page6-part2-bottom{
+    height: 50%;
+    width: 100%;
+    /* background-color: rgb(115, 128, 0); */
+    padding: 2px 5px;
+    display: flex;
+    gap: 25px;
+}
+#page6-part2-bottom-left{
+    height: 100%;
+    width: 50%;
+    background-color: yellow;
+}
+#page6-part2-bottom-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page6-part2-bottom-right{
+    height: 100%;
+    width: 50%;
+    background-color: yellow;
+}
+#page6-part2-bottom-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} 
+#page7{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 47px;
+}
+#page7 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page8{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+}
+#page8-part1{
+    height: 100%;
+    width: 60%;
+}
+#page8-part1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#page8-part2{
+    height: 100%;
+    width: 40%;
+    
+}
+#page8-part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+#page8-part2-bottom{
+    display: flex;
+    height: 29%;
+    width: 100%;
+    /* background-color: red; */
+    gap: 20%;
+    position: relative;
+    padding-top: 12px;
+}
+#page8-part2-bottom-right{
+    height: 100%;
+    width: 40%;
+    /* background-color: yellow; */
+
+}
+
+#page8-part2-bottom-left{
+    height: 100%;
+    width: 40%;
+    /* background-color: yellow; */
+}
+#page8-part2-bottom-left p{
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#marque{
+    height: 5vw;
+    width: 100%;
+    padding: 1vw;
+    /* background-color: red; */
+    /* display: inline-flex; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+
+}
+#marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black ;
+    color: transparent;
+    letter-spacing: 2px;
+    /* background-color: blue; */
+    margin-right: 16px;
+    animation-name: move;
+    animation-duration: 5s;
+    /* animation-delay: 1s; */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+ @keyframes  move{ 
+    from{
+           transform: translateX(0%);
+    }
+    to{
+             transform: translateX(-100%);
+    }
+} 
+#footer{
+    height: 100%;
+    width: 100%;
+}
+
